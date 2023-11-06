@@ -1,0 +1,2603 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - kajblue</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/kajblue.styles.css" asp-append-version="true" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+    <header class=" align-content-center ">
+        <!-- search and brand logo -->
+    <div class="d-flex col-10 mb-3 ">
+        <span class="me-md-4"></span>
+        <a class=" me-2 mt-2 col-2 d-none d-md-block d-lg-block d-xl-block " href="#"><img src="./assets/img/img/1.jpg" class="rounded w-50"></a>
+        <a class=" me-2 mt-2 col-2  d-block d-md-none d-lg-none d-xl-none" href="#"><img src="./assets/img/img/1.jpg" class="rounded w-100"></a>
+        <div class=" me-5 ms-auto d-flex col-10 mt-2">
+            <button class="btn border-0  d-none d-lg-block d-xl-block " type="submit"><img src="/assets/img/search_black_24dp.svg" alt=""></button>
+            <input class="form-control border border-2 border-black d-none d-lg-flex d-xl-flex d-md-flex rounded-5" type="search"
+                placeholder="search in kaj ...">
+            <span class="me-5 d-none d-lg-block d-xl-block"></span>
+            <span class="me-5 d-none d-md-block d-lg-block d-xl-block"></span>
+            <span class="me-5 d-none d-md-block d-lg-block d-xl-block"></span>
+           <div class=" d-flex flex-row me-auto" style="zoom: 95%;">
+             <a class="me-lg-5 me-5 mt-2 link-dark nav-link " href="">ورود</a>
+            <a class="me-lg-5 me-5 mt-2" href=""><img src="/assets/img/shopping_cart_black_24dp.svg" alt=""></a>
+            <a class="me-lg-5 me-5 mt-2" href=""><img src="/assets/img/favorite_border_black_24dp.svg" alt=""></a>
+            <a class="me-lg-5 me-5 mt-2" href=""><img src="/assets/img/language_black_24dp.svg" alt=""></a>
+            
+           </div>
+
+        </div>
+    </div>
+    <div class="col-10  d-flex flex-row  d-md-none d-lg-none d-xl-none" style="zoom: 90%;">
+        <button class="btn border-0 col-2 " type="submit"><img src="/assets/img/search_black_24dp.svg" alt=""></button>
+            <input class="form-control border col-9 border-2 border-black   rounded-5" type="search"
+                placeholder="search in kaj ...">
+    </div>
+     
+            @* ofcanvas menu *@
+<div class="col-12">
+    <ul style="zoom:90% ;" class="list-group-horizontal col-12 flex-row d-flex d-md-none text-center align-content-between justify-content-evenly p-0 d-lg-none d-xl-none  mt-3">
+        <li class="list-group-item     ">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center" data-bs-toggle="offcanvas" href="#sampleCanvas1" role="button" aria-controls="sampleCanvas1">item</a>
+        </li>
+        <li class="list-group-item ">
+          
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center" data-bs-toggle="offcanvas" href="#sampleCanvas2" role="button" aria-controls="sampleCanvas2">item</a>
+        </li>
+      
+        <li class="list-group-item ">
+            
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center" data-bs-toggle="offcanvas" href="#sampleCanvas3" role="button" aria-controls="sampleCanvas3">item</a>
+        </li>
+       
+        <li class="list-group-item ">
+            
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center" data-bs-toggle="offcanvas" href="#sampleCanvas4" role="button" aria-controls="sampleCanvas4">item</a>
+     
+        </li>
+        <li class="list-group-item ">
+            
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center" data-bs-toggle="offcanvas" href="#sampleCanvas5" role="button" aria-controls="sampleCanvas5">item</a>
+      
+        </li>
+        <li class="list-group-item ">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center" href="#">item6</a>
+        </li>
+        <li class="list-group-item ">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center" href="Views/mozayede/Mozayede.cshtml">مزایده</a>
+        </li>
+    </ul>
+</div>
+
+@* first mobile menu *@
+ <div class="offcanvas offcanvas-start " tabindex="-1" id="sampleCanvas1" aria-labelledby="sampleCanvas1"  style="width: 85% !important;">
+            <div class="offcanvas-header">
+                <h6 class="offcanvas-title">menu1</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-row ">
+               
+                  <ul class="list-group  col-6">
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                      
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">iitem3</a>
+                    </li>
+                  </ul>
+                  <ul class="list-group  col-6">
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                      
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">iitem3</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+        @* second mobile menu *@
+ <div class="offcanvas offcanvas-start " tabindex="-1" id="sampleCanvas2" aria-labelledby="sampleCanvas2"  style="width: 85% !important;">
+            <div class="offcanvas-header">
+                <h6 class="offcanvas-title">menu1</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-row ">
+               
+                  <ul class="list-group  col-6">
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                      
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">iitem3</a>
+                    </li>
+                  </ul>
+                  <ul class="list-group  col-6">
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                      
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">iitem3</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+         @* third mobile menu *@
+ <div class="offcanvas offcanvas-start " tabindex="-1" id="sampleCanvas3" aria-labelledby="sampleCanvas3"  style="width: 85% !important;">
+            <div class="offcanvas-header">
+                <h6 class="offcanvas-title">menu1</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-row ">
+               
+                  <ul class="list-group  col-6">
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                      
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">iitem3</a>
+                    </li>
+                  </ul>
+                  <ul class="list-group  col-6">
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                      
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">iitem3</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+         @* fourth mobile menu *@
+ <div class="offcanvas offcanvas-start " tabindex="-1" id="sampleCanvas4" aria-labelledby="sampleCanvas4"  style="width: 85% !important;">
+            <div class="offcanvas-header">
+                <h6 class="offcanvas-title">menu1</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-row ">
+               
+                  <ul class="list-group  col-6">
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                      
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">iitem3</a>
+                    </li>
+                  </ul>
+                  <ul class="list-group  col-6">
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                      
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">iitem3</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+         @* fifth mobile menu *@
+ <div class="offcanvas offcanvas-start " tabindex="-1" id="sampleCanvas5" aria-labelledby="sampleCanvas5"  style="width: 85% !important;">
+            <div class="offcanvas-header">
+                <h6 class="offcanvas-title">menu1</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-row ">
+               
+                  <ul class="list-group  col-6">
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                      
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">iitem3</a>
+                    </li>
+                  </ul>
+                  <ul class="list-group  col-6">
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                      
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                     
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    
+                    </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                      <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">item1</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-4 mt-4 border-0 ">
+                       <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover text-center fw-bolder" href="#">iitem3</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+ 
+ 
+    <!-- header menu fade in small screens -->
+    
+
+
+    <ul class="list-group-horizontal  flex-row justify-content-around d-none d-md-flex  d-lg-flex d-xl-flex">
+        <li class="list-group-item">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="#"
+                onmouseover="menu1open()" >item1</a>
+        </li>
+        <li class="list-group-item">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="#"
+                onmouseover="menu2open()">item2</a>
+        </li>
+        <li class="list-group-item">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="#"  onmouseover="menu3open()">item3</a>
+        </li>
+        <li class="list-group-item">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="#"  onmouseover="menu4open()">item4</a>
+        </li>
+        <li class="list-group-item">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="#"  onmouseover="menu5open()">item5</a>
+        </li>
+        <li class="list-group-item">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="#">item6</a>
+        </li>
+        <li class="list-group-item">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="Views/mozayede/Mozayede.cshtml">مزایده</a>
+        </li>
+    </ul>
+    <div onmouseover="closeothersubmenues()" >
+        <!-- menu 1 open when hover  start-->
+        <ul class="border border-top-0 position-absolute me-5 rounded-3 bg-light" id="homekit"
+            style="display: none; transition: 2s linear; width: 93%;" onmouseover="menu1open()" onclick="">
+            <li class="list-group-item p-2 border-start w-25">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                    onmouseover="menu1submenu1()">item1</a>
+            </li>
+            <li class="list-group-item p-2 border-start w-25 ">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                    onmouseover="menu1submenu2()">item1</a>
+            </li>
+            <li class="list-group-item p-2 border-start w-25 ">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                    onmouseover="menu1submenu3()">item1</a>
+            </li>
+            <li class="list-group-item p-2 border-start w-25 ">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                    onmouseover="menu1submenu4()">item1</a>
+            </li>
+            <li class="list-group-item p-2 border-start w-25 ">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                    onmouseover="menu1submenu5()">item1</a>
+            </li>
+            <li class="list-group-item p-2 border-start w-25 ">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                    onmouseover="menu1submenu6()">item1</a>
+            </li>
+
+        </ul>
+        <!-- menu 1 open when hover  end-->
+
+        <!-- menu 1 submenu 1 start -->
+        <ul class="position-absolute flex-row " id="firstmenusubmenu1" style="margin-right: 200px; display: none;">
+            <div class="col-6 mt-4" style="margin-right: 200px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu 1</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu 2</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu 3</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu 4</a>
+                </li>
+
+            </div>
+            <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu 5</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu 6</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu 7</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu 8</a>
+                </li>
+            </div>
+
+        </ul>
+        <!-- menu 1 submenu 1 end -->
+
+        <!-- menu 1 submenu 2 start -->
+        <ul class="position-absolute flex-row " id="firstmenusubmenu2" style="margin-right: 200px; display: none;">
+            <div class="col-6 mt-4" style="margin-right: 200px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(2) 1</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(2) 2</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(2) 3</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(2) 4</a>
+                </li>
+
+            </div>
+            <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(2) 5</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(2) 6</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(2) 7</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(2) 8</a>
+                </li>
+            </div>
+
+        </ul>
+        <!-- menu 1 submenu 2 end -->
+        <!-- menu 1 submenu 3 start -->
+        <ul class="position-absolute flex-row " id="firstmenusubmenu3" style="margin-right: 200px; display: none;">
+            <div class="col-6 mt-4" style="margin-right: 200px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 1</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 2</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 3</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 4</a>
+                </li>
+
+            </div>
+            <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 5</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 6</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 7</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 8</a>
+                </li>
+            </div>
+
+        </ul>
+        <!-- menu 1 submenu 3 end -->
+        <!-- menu 1 submenu 4 start -->
+        <ul class="position-absolute flex-row " id="firstmenusubmenu4" style="margin-right: 200px; display: none;">
+            <div class="col-6 mt-4" style="margin-right: 200px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(4) 1</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(4) 2</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(4) 3</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 4</a>
+                </li>
+
+            </div>
+            <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 5</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 6</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 7</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 8</a>
+                </li>
+            </div>
+
+        </ul>
+        <!-- menu 1 submenu 4 end -->
+        <!-- menu 1 submenu 5 start -->
+        <ul class="position-absolute flex-row " id="firstmenusubmenu5" style="margin-right: 200px; display: none;">
+            <div class="col-6 mt-4" style="margin-right: 200px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(5) 1</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(5) 2</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(5) 3</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(5) 4</a>
+                </li>
+
+            </div>
+            <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(5) 5</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(5) 6</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(5) 7</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(5) 8</a>
+                </li>
+            </div>
+
+        </ul>
+        <!-- menu 1 submenu 5 end -->
+        <!-- menu 1 submenu 6 start -->
+        <ul class="position-absolute flex-row " id="firstmenusubmenu6" style="margin-right: 200px; display: none;">
+            <div class="col-6 mt-4" style="margin-right: 200px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(6) 1</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(6) 2</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(6) 3</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(6) 4</a>
+                </li>
+
+            </div>
+            <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(63) 5</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(36) 6</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(6) 7</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(36) 8</a>
+                </li>
+            </div>
+
+        </ul>
+        <!-- menu 1 submenu 6 end -->
+
+        <!-- menu 1 open when hover  end-->
+    </div>
+    <!-- ////////menu 2 open when hover start////////////////-->
+    <div class="bg-light">
+        
+        <ul class="border border-top-0 position-absolute me-5 rounded-3 bg-light " id="supplykit"
+            style="display: none; transition: 2s linear; width: 93%;" onmouseover="menu2open()" onclick="">
+            <li class="list-group-item p-2 border-start w-25">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                    onmouseover="menu2submenu1()">item2</a>
+            </li>
+            <li class="list-group-item p-2 border-start w-25 ">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                    onmouseover="menu2submenu2()">item2</a>
+            </li>
+            <li class="list-group-item p-2 border-start w-25 ">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                    onmouseover="menu2submenu3()">item2</a>
+            </li>
+            <li class="list-group-item p-2 border-start w-25 ">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                    onmouseover="menu2submenu4()">item2</a>
+            </li>
+            <li class="list-group-item p-2 border-start w-25 ">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                    onmouseover="menu2submenu5()">item2</a>
+            </li>
+            <li class="list-group-item p-2 border-start w-25 ">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                    onmouseover="menu2submenu6()">item2</a>
+            </li>
+
+        </ul>
+        <!-- menu 1 open when hover  end-->
+
+        <!-- menu 1 submenu 1 start -->
+        <ul class="position-absolute flex-row " id="secondmenusubmenu1" style="margin-right: 200px; display: none;">
+            <div class="col-6 mt-4" style="margin-right: 200px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu 1</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu 2</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu 3</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu 4</a>
+                </li>
+
+            </div>
+            <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu 5</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu 6</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu 7</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu 8</a>
+                </li>
+            </div>
+
+        </ul>
+        <!-- menu 1 submenu 1 end -->
+
+        <!-- menu 1 submenu 2 start -->
+        <ul class="position-absolute flex-row " id="secondmenusubmenu2" style="margin-right: 200px; display: none;">
+            <div class="col-6 mt-4" style="margin-right: 200px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(2) 1</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(2) 2</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(2) 3</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(2) 4</a>
+                </li>
+
+            </div>
+            <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(2) 5</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(2) 6</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(2) 7</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(2) 8</a>
+                </li>
+            </div>
+
+        </ul>
+        <!-- menu 1 submenu 2 end -->
+        <!-- menu 1 submenu 3 start -->
+        <ul class="position-absolute flex-row " id="secondmenusubmenu3" style="margin-right: 200px; display: none;">
+            <div class="col-6 mt-4" style="margin-right: 200px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 1</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 2</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 3</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 4</a>
+                </li>
+
+            </div>
+            <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 5</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 6</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 7</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 8</a>
+                </li>
+            </div>
+
+        </ul>
+        <!-- menu 1 submenu 3 end -->
+        <!-- menu 1 submenu 4 start -->
+        <ul class="position-absolute flex-row " id="secondmenusubmenu4" style="margin-right: 200px; display: none;">
+            <div class="col-6 mt-4" style="margin-right: 200px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(4) 1</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(4) 2</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(4) 3</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 4</a>
+                </li>
+
+            </div>
+            <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 5</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 6</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 7</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(3) 8</a>
+                </li>
+            </div>
+
+        </ul>
+        <!-- menu 1 submenu 4 end -->
+        <!-- menu 1 submenu 5 start -->
+        <ul class="position-absolute flex-row " id="secondmenusubmenu5" style="margin-right: 200px; display: none;">
+            <div class="col-6 mt-4" style="margin-right: 200px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(5) 1</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(5) 2</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(5) 3</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(5) 4</a>
+                </li>
+
+            </div>
+            <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(5) 5</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(5) 6</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(5) 7</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(5) 8</a>
+                </li>
+            </div>
+
+        </ul>
+        <!-- menu 1 submenu 5 end -->
+        <!-- menu 1 submenu 6 start -->
+        <ul class="position-absolute flex-row " id="secondmenusubmenu6" style="margin-right: 200px; display: none;">
+            <div class="col-6 mt-4" style="margin-right: 200px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(6) 1</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(6) 2</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(6) 3</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(6) 4</a>
+                </li>
+
+            </div>
+            <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(63) 5</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(36) 6</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(6) 7</a>
+                </li>
+                <li class="list-group-item p-2">
+                    <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                        menu(36) 8</a>
+                </li>
+            </div>
+
+        </ul>
+        <!-- menu 1 submenu 6 end -->
+    </div>
+    <!-- //////////menu 2 open when hover end////////////////-->
+    <!-- ////////menu 3 open when hover start////////////////-->
+<div>
+
+    <ul class="border border-top-0 position-absolute me-5 rounded-3 bg-light" id="jewelrykit"
+    style="display: none; transition: 2s linear; width: 93%;" onmouseover="menu3open()" onclick="">
+    <li class="list-group-item p-2 border-start w-25">
+        <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+            onmouseover="menu3submenu1()">item13</a>
+    </li>
+    <li class="list-group-item p-2 border-start w-25 ">
+        <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+            onmouseover="menu3submenu2()">item13</a>
+    </li>
+    <li class="list-group-item p-2 border-start w-25 ">
+        <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+            onmouseover="menu3submenu3()">item13</a>
+    </li>
+    <li class="list-group-item p-2 border-start w-25 ">
+        <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+            onmouseover="menu3submenu4()">item13</a>
+    </li>
+    <li class="list-group-item p-2 border-start w-25 ">
+        <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+            onmouseover="menu3submenu5()">item1</a>
+    </li>
+    <li class="list-group-item p-2 border-start w-25 ">
+        <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+            onmouseover="menu3submenu6()">item1</a>
+    </li>
+
+</ul>
+<!-- menu 3 open when hover  end-->
+
+<!-- menu 3 submenu 1 start -->
+<ul class="position-absolute flex-row " id="thirdmenusubmenu1" style="margin-right: 200px; display: none;">
+    <div class="col-6 mt-4" style="margin-right: 200px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu3 1</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu3 2</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu3 3</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu3 4</a>
+        </li>
+
+    </div>
+    <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu3 5</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu3 6</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu3 7</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu3 8</a>
+        </li>
+    </div>
+
+</ul>
+<!-- menu 3 submenu 1 end -->
+
+<!-- menu 3 submenu 2 start -->
+<ul class="position-absolute flex-row " id="thirdmenusubmenu2" style="margin-right: 200px; display: none;">
+    <div class="col-6 mt-4" style="margin-right: 200px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 1</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 2</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 3</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 4</a>
+        </li>
+
+    </div>
+    <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 5</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 6</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 7</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 8</a>
+        </li>
+    </div>
+
+</ul>
+<!-- menu 3 submenu 2 end -->
+<!-- menu 3 submenu 3 start -->
+<ul class="position-absolute flex-row " id="thirdmenusubmenu3" style="margin-right: 200px; display: none;">
+    <div class="col-6 mt-4" style="margin-right: 200px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 1</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 2</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 3</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 4</a>
+        </li>
+
+    </div>
+    <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 5</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 6</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 7</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 8</a>
+        </li>
+    </div>
+
+</ul>
+<!-- menu 3 submenu 3 end -->
+<!-- menu 3 submenu 4 start -->
+<ul class="position-absolute flex-row " id="thirdmenusubmenu4" style="margin-right: 200px; display: none;">
+    <div class="col-6 mt-4" style="margin-right: 200px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(4) 1</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(4) 2</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(4) 3</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 4</a>
+        </li>
+
+    </div>
+    <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 5</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 6</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 7</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 8</a>
+        </li>
+    </div>
+
+</ul>
+<!-- menu 3 submenu 4 end -->
+<!-- menu 3 submenu 5 start -->
+<ul class="position-absolute flex-row " id="thirdmenusubmenu5" style="margin-right: 200px; display: none;">
+    <div class="col-6 mt-4" style="margin-right: 200px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(5) 1</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(5) 2</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(5) 3</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(5) 4</a>
+        </li>
+
+    </div>
+    <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(5) 5</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(5) 6</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(5) 7</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(5) 8</a>
+        </li>
+    </div>
+
+</ul>
+<!-- menu 3 submenu 5 end -->
+<!-- menu 3 submenu 6 start -->
+<ul class="position-absolute flex-row " id="thirdmenusubmenu6" style="margin-right: 200px; display: none;">
+    <div class="col-6 mt-4" style="margin-right: 200px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 1</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 2</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 3</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 4</a>
+        </li>
+
+    </div>
+    <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(63) 5</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(36) 6</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 7</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(36) 8</a>
+        </li>
+    </div>
+
+</ul>
+</div>
+    <!-- //////////menu 3 open when hover end////////////////-->
+    <!-- ////////menu 4 open when hover start////////////////-->
+<div>
+
+        <ul class="border border-top-0 position-absolute me-5 rounded-3 bg-light" id="partykit"
+        style="display: none; transition: 2s linear; width: 93%;" onmouseover="menu4open()" onclick="">
+        <li class="list-group-item p-2 border-start w-25">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                onmouseover="menu4submenu1()">item13</a>
+        </li>
+        <li class="list-group-item p-2 border-start w-25 ">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                onmouseover="menu4submenu2()">item13</a>
+        </li>
+        <li class="list-group-item p-2 border-start w-25 ">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                onmouseover="menu4submenu3()">item13</a>
+        </li>
+        <li class="list-group-item p-2 border-start w-25 ">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                onmouseover="menu4submenu4()">item13</a>
+        </li>
+        <li class="list-group-item p-2 border-start w-25 ">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                onmouseover="menu4submenu5()">item1</a>
+        </li>
+        <li class="list-group-item p-2 border-start w-25 ">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+                onmouseover="menu4submenu6()">item1</a>
+        </li>
+    
+    </ul>
+    <!-- menu 3 open when hover  end-->
+    
+    <!-- menu 3 submenu 1 start -->
+    <ul class="position-absolute flex-row " id="fourmenusubmenu1" style="margin-right: 200px; display: none;">
+        <div class="col-6 mt-4" style="margin-right: 200px;">
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu3 1</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu3 2</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu3 3</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu3 4</a>
+            </li>
+    
+        </div>
+        <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu3 5</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu3 6</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu3 7</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu3 8</a>
+            </li>
+        </div>
+    
+    </ul>
+    <!-- menu 3 submenu 1 end -->
+    
+    <!-- menu 3 submenu 2 start -->
+    <ul class="position-absolute flex-row " id="fourmenusubmenu2" style="margin-right: 200px; display: none;">
+        <div class="col-6 mt-4" style="margin-right: 200px;">
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 1</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 2</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 3</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 4</a>
+            </li>
+    
+        </div>
+        <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 5</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 6</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 7</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 8</a>
+            </li>
+        </div>
+    
+    </ul>
+    <!-- menu 3 submenu 2 end -->
+    <!-- menu 3 submenu 3 start -->
+    <ul class="position-absolute flex-row " id="fourmenusubmenu3" style="margin-right: 200px; display: none;">
+        <div class="col-6 mt-4" style="margin-right: 200px;">
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 1</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 2</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 3</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 4</a>
+            </li>
+    
+        </div>
+        <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 5</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 6</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 7</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 8</a>
+            </li>
+        </div>
+    
+    </ul>
+    <!-- menu 3 submenu 3 end -->
+    <!-- menu 3 submenu 4 start -->
+    <ul class="position-absolute flex-row " id="fourmenusubmenu4" style="margin-right: 200px; display: none;">
+        <div class="col-6 mt-4" style="margin-right: 200px;">
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(4) 1</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(4) 2</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(4) 3</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 4</a>
+            </li>
+    
+        </div>
+        <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 5</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 6</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 7</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(3) 8</a>
+            </li>
+        </div>
+    
+    </ul>
+    <!-- menu 3 submenu 4 end -->
+    <!-- menu 3 submenu 5 start -->
+    <ul class="position-absolute flex-row " id="fourmenusubmenu5" style="margin-right: 200px; display: none;">
+        <div class="col-6 mt-4" style="margin-right: 200px;">
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(5) 1</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(5) 2</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(5) 3</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(5) 4</a>
+            </li>
+    
+        </div>
+        <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(5) 5</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(5) 6</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(5) 7</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(5) 8</a>
+            </li>
+        </div>
+    
+    </ul>
+    <!-- menu 3 submenu 5 end -->
+    <!-- menu 3 submenu 6 start -->
+    <ul class="position-absolute flex-row " id="fourmenusubmenu6" style="margin-right: 200px; display: none;">
+        <div class="col-6 mt-4" style="margin-right: 200px;">
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(6) 1</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(6) 2</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(6) 3</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(6) 4</a>
+            </li>
+    
+        </div>
+        <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(63) 5</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(36) 6</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(6) 7</a>
+            </li>
+            <li class="list-group-item p-2">
+                <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                    menu(36) 8</a>
+            </li>
+        </div>
+    
+    </ul>
+</div>
+ <!-- ////////menu 5 open when hover start////////////////-->
+<div>
+
+    <ul class="border border-top-0 position-absolute me-5 rounded-3 bg-light" id="wearkit"
+    style="display: none; transition: 2s linear; width: 93%;" onmouseover="menu5open()" onclick="">
+    <li class="list-group-item p-2 border-start w-25">
+        <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+            onmouseover="menu5submenu1()">item13</a>
+    </li>
+    <li class="list-group-item p-2 border-start w-25 ">
+        <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+            onmouseover="menu5submenu2()">item13</a>
+    </li>
+    <li class="list-group-item p-2 border-start w-25 ">
+        <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+            onmouseover="menu5submenu3()">item13</a>
+    </li>
+    <li class="list-group-item p-2 border-start w-25 ">
+        <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+            onmouseover="menu5submenu4()">item13</a>
+    </li>
+    <li class="list-group-item p-2 border-start w-25 ">
+        <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+            onmouseover="menu5submenu5()">item1</a>
+    </li>
+    <li class="list-group-item p-2 border-start w-25 ">
+        <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover " href="#"
+            onmouseover="menu5submenu6()">item1</a>
+    </li>
+
+</ul>
+<!-- menu 3 open when hover  end-->
+
+<!-- menu 3 submenu 1 start -->
+<ul class="position-absolute flex-row " id="fivemenusubmenu1" style="margin-right: 200px; display: none;">
+    <div class="col-6 mt-4" style="margin-right: 200px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu6 1</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu36 2</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu6 3</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu6 4</a>
+        </li>
+
+    </div>
+    <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu3 5</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu3 6</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu3 7</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu3 8</a>
+        </li>
+    </div>
+
+</ul>
+<!-- menu 3 submenu 1 end -->
+
+<!-- menu 3 submenu 2 start -->
+<ul class="position-absolute flex-row " id="fivemenusubmenu2" style="margin-right: 200px; display: none;">
+    <div class="col-6 mt-4" style="margin-right: 200px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 1</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 2</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 3</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 4</a>
+        </li>
+
+    </div>
+    <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 5</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 6</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 7</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 8</a>
+        </li>
+    </div>
+
+</ul>
+<!-- menu 3 submenu 2 end -->
+<!-- menu 3 submenu 3 start -->
+<ul class="position-absolute flex-row " id="fivemenusubmenu3" style="margin-right: 200px; display: none;">
+    <div class="col-6 mt-4" style="margin-right: 200px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 1</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 2</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 3</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 4</a>
+        </li>
+
+    </div>
+    <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 5</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 6</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 7</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 8</a>
+        </li>
+    </div>
+
+</ul>
+<!-- menu 3 submenu 3 end -->
+<!-- menu 3 submenu 4 start -->
+<ul class="position-absolute flex-row " id="fivemenusubmenu4" style="margin-right: 200px; display: none;">
+    <div class="col-6 mt-4" style="margin-right: 200px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(4) 1</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(4) 2</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(4) 3</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 4</a>
+        </li>
+
+    </div>
+    <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 5</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 6</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 7</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(3) 8</a>
+        </li>
+    </div>
+
+</ul>
+<!-- menu 3 submenu 4 end -->
+<!-- menu 3 submenu 5 start -->
+<ul class="position-absolute flex-row " id="fivemenusubmenu5" style="margin-right: 200px; display: none;">
+    <div class="col-6 mt-4" style="margin-right: 200px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(5) 1</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(5) 2</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(5) 3</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(5) 4</a>
+        </li>
+
+    </div>
+    <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(5) 5</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(5) 6</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(5) 7</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(5) 8</a>
+        </li>
+    </div>
+
+</ul>
+<!-- menu 3 submenu 5 end -->
+<!-- menu 3 submenu 6 start -->
+<ul class="position-absolute flex-row " id="fivemenusubmenu6" style="margin-right: 200px; display: none;">
+    <div class="col-6 mt-4" style="margin-right: 200px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 1</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 2</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 3</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 4</a>
+        </li>
+
+    </div>
+    <div class="col-6 " style="margin-right: 650px; margin-top: -155px;">
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(63) 5</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(36) 6</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(6) 7</a>
+        </li>
+        <li class="list-group-item p-2">
+            <a class="link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="">sub
+                menu(36) 8</a>
+        </li>
+    </div>
+   
+</ul>
+</div>
+    <!-- //////////menu 5 open when hover end////////////////-->
+  <!-- main content first page -->
+    <main onmouseover="menuclose()">
+        
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        // open  homekit menu  and close other menues
+        function menu1open() {
+            if (document.getElementById("homekit").style.display == "none") { 
+                document.getElementById("homekit").style.display = "block";
+                document.getElementById("secondmenusubmenu1").style.display = "none";
+                document.getElementById("secondmenusubmenu2").style.display = "none";
+                document.getElementById("secondmenusubmenu3").style.display = "none";
+                document.getElementById("secondmenusubmenu4").style.display = "none";
+                document.getElementById("secondmenusubmenu5").style.display = "none";
+                document.getElementById("secondmenusubmenu6").style.display = "none";
+                document.getElementById("thirdmenusubmenu1").style.display = "none";
+                document.getElementById("thirdmenusubmenu2").style.display = "none";
+                document.getElementById("thirdmenusubmenu3").style.display = "none";
+                document.getElementById("thirdmenusubmenu4").style.display = "none";
+                document.getElementById("thirdmenusubmenu5").style.display = "none";
+                document.getElementById("thirdmenusubmenu6").style.display = "none";
+                document.getElementById("fourmenusubmenu1").style.display = "none";
+                document.getElementById("fourmenusubmenu2").style.display = "none";
+                document.getElementById("fourmenusubmenu3").style.display = "none";
+                document.getElementById("fourmenusubmenu4").style.display = "none";
+                document.getElementById("fourmenusubmenu5").style.display = "none";
+                document.getElementById("fourmenusubmenu6").style.display = "none";
+                document.getElementById("fivemenusubmenu1").style.display = "none";
+                document.getElementById("fivemenusubmenu2").style.display = "none";
+                document.getElementById("fivemenusubmenu3").style.display = "none";
+                document.getElementById("fivemenusubmenu4").style.display = "none";
+                document.getElementById("fivemenusubmenu5").style.display = "none";
+                document.getElementById("fivemenusubmenu6").style.display = "none";
+            }
+
+            if (document.getElementById("homekit").style.display == "block") {
+                document.getElementById("supplykit").style.display = "none";
+                document.getElementById("jewelrykit").style.display = "none";
+                document.getElementById("partykit").style.display = "none";
+                document.getElementById("wearkit").style.display = "none";
+              
+            }
+            
+        }
+        // close all menu and submenues
+        function menuclose() {
+            if (document.getElementById("homekit").style.display == "block") {
+                document.getElementById("homekit").style.display = "none";
+                document.getElementById("firstmenusubmenu1").style.display = "none";
+                document.getElementById("firstmenusubmenu2").style.display = "none";
+                document.getElementById("firstmenusubmenu3").style.display = "none";
+                document.getElementById("firstmenusubmenu4").style.display = "none";
+                document.getElementById("firstmenusubmenu5").style.display = "none";
+                document.getElementById("firstmenusubmenu6").style.display = "none";
+            }
+            if (document.getElementById("supplykit").style.display == "block") {
+                document.getElementById("supplykit").style.display = "none";
+                document.getElementById("secondmenusubmenu1").style.display = "none";
+                document.getElementById("secondmenusubmenu2").style.display = "none";
+                document.getElementById("secondmenusubmenu3").style.display = "none";
+                document.getElementById("secondmenusubmenu4").style.display = "none";
+                document.getElementById("secondmenusubmenu5").style.display = "none";
+                document.getElementById("secondmenusubmenu6").style.display = "none";
+            }
+            if (document.getElementById("jewelrykit").style.display == "block") {
+                document.getElementById("jewelrykit").style.display = "none";
+                document.getElementById("thirdmenusubmenu1").style.display = "none";
+                document.getElementById("thirdmenusubmenu2").style.display = "none";
+                document.getElementById("thirdmenusubmenu3").style.display = "none";
+                document.getElementById("thirdmenusubmenu4").style.display = "none";
+                document.getElementById("thirdmenusubmenu5").style.display = "none";
+                document.getElementById("thirdmenusubmenu6").style.display = "none";
+            }
+            if (document.getElementById("partykit").style.display == "block") {
+                document.getElementById("partykit").style.display = "none";
+                document.getElementById("fourmenusubmenu3").style.display = "none";
+                document.getElementById("fourmenusubmenu2").style.display = "none";
+                document.getElementById("fourmenusubmenu4").style.display = "none";
+                document.getElementById("fourmenusubmenu1").style.display = "none";
+                document.getElementById("fourmenusubmenu5").style.display = "none";
+                document.getElementById("fourmenusubmenu6").style.display = "none";
+            }
+            if (document.getElementById("wearkit").style.display == "block") {
+                document.getElementById("wearkit").style.display = "none";
+                document.getElementById("fivemenusubmenu3").style.display = "none";
+                document.getElementById("fivemenusubmenu2").style.display = "none";
+                document.getElementById("fivemenusubmenu4").style.display = "none";
+                document.getElementById("fivemenusubmenu1").style.display = "none";
+                document.getElementById("fivemenusubmenu5").style.display = "none";
+                document.getElementById("fivemenusubmenu6").style.display = "none";
+            }
+
+
+            //   open home  submenu 1 & close other submenues 
+        }
+        function menu1submenu1() {
+            if (document.getElementById("firstmenusubmenu1").style.display == "none") {
+                document.getElementById("firstmenusubmenu1").style.display = "block";
+                // close other sub menues
+
+            }
+            if (document.getElementById("firstmenusubmenu1").style.display == "block") {
+                document.getElementById("firstmenusubmenu2").style.display = "none";
+                document.getElementById("firstmenusubmenu3").style.display = "none";
+                document.getElementById("firstmenusubmenu4").style.display = "none";
+                document.getElementById("firstmenusubmenu5").style.display = "none";
+                document.getElementById("firstmenusubmenu6").style.display = "none";
+            }
+            //   open home  submenu 2 & close other submenues 
+        }
+        function menu1submenu2() {
+            if (document.getElementById("firstmenusubmenu2").style.display == "none") { document.getElementById("firstmenusubmenu2").style.display = "block"; }
+
+            if (document.getElementById("firstmenusubmenu2").style.display == "block") {
+                document.getElementById("firstmenusubmenu1").style.display = "none";
+                document.getElementById("firstmenusubmenu3").style.display = "none";
+                document.getElementById("firstmenusubmenu4").style.display = "none";
+                document.getElementById("firstmenusubmenu5").style.display = "none";
+                document.getElementById("firstmenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 3 & close other submenues 
+        function menu1submenu3() {
+            if (document.getElementById("firstmenusubmenu3").style.display == "none") { document.getElementById("firstmenusubmenu3").style.display = "block"; }
+
+            if (document.getElementById("firstmenusubmenu3").style.display == "block") {
+                document.getElementById("firstmenusubmenu1").style.display = "none";
+                document.getElementById("firstmenusubmenu2").style.display = "none";
+                document.getElementById("firstmenusubmenu4").style.display = "none";
+                document.getElementById("firstmenusubmenu5").style.display = "none";
+                document.getElementById("firstmenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 4 & close other submenues 
+        function menu1submenu4() {
+            if (document.getElementById("firstmenusubmenu4").style.display == "none") { document.getElementById("firstmenusubmenu4").style.display = "block"; }
+
+            if (document.getElementById("firstmenusubmenu4").style.display == "block") {
+                document.getElementById("firstmenusubmenu1").style.display = "none";
+                document.getElementById("firstmenusubmenu3").style.display = "none";
+                document.getElementById("firstmenusubmenu2").style.display = "none";
+                document.getElementById("firstmenusubmenu5").style.display = "none";
+                document.getElementById("firstmenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 5 & close other submenues 
+        function menu1submenu5() {
+            if (document.getElementById("firstmenusubmenu5").style.display == "none") { document.getElementById("firstmenusubmenu5").style.display = "block"; }
+
+            if (document.getElementById("firstmenusubmenu5").style.display == "block") {
+                document.getElementById("firstmenusubmenu1").style.display = "none";
+                document.getElementById("firstmenusubmenu3").style.display = "none";
+                document.getElementById("firstmenusubmenu4").style.display = "none";
+                document.getElementById("firstmenusubmenu2").style.display = "none";
+                document.getElementById("firstmenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 6 & close other submenues 
+        function menu1submenu6() {
+            if (document.getElementById("firstmenusubmenu6").style.display == "none") { document.getElementById("firstmenusubmenu6").style.display = "block"; }
+
+            if (document.getElementById("firstmenusubmenu6").style.display == "block") {
+                document.getElementById("firstmenusubmenu1").style.display = "none";
+                document.getElementById("firstmenusubmenu3").style.display = "none";
+                document.getElementById("firstmenusubmenu4").style.display = "none";
+                document.getElementById("firstmenusubmenu5").style.display = "none";
+                document.getElementById("firstmenusubmenu2").style.display = "none";
+            }
+        }
+
+        ////////////////////////////////////////////////// second menu script
+
+
+
+        // open  second menu  and close other menues
+        function menu2open() {
+            if (document.getElementById("supplykit").style.display == "none") { 
+                document.getElementById("supplykit").style.display = "block";
+                document.getElementById("firstmenusubmenu1").style.display = "none";
+                document.getElementById("firstmenusubmenu2").style.display = "none";
+                document.getElementById("firstmenusubmenu3").style.display = "none";
+                document.getElementById("firstmenusubmenu4").style.display = "none";
+                document.getElementById("firstmenusubmenu5").style.display = "none";
+                document.getElementById("firstmenusubmenu6").style.display = "none";
+                document.getElementById("thirdmenusubmenu1").style.display = "none";
+                document.getElementById("thirdmenusubmenu2").style.display = "none";
+                document.getElementById("thirdmenusubmenu3").style.display = "none";
+                document.getElementById("thirdmenusubmenu4").style.display = "none";
+                document.getElementById("thirdmenusubmenu5").style.display = "none";
+                document.getElementById("thirdmenusubmenu6").style.display = "none";
+                document.getElementById("fourmenusubmenu1").style.display = "none";
+                document.getElementById("fourmenusubmenu2").style.display = "none";
+                document.getElementById("fourmenusubmenu3").style.display = "none";
+                document.getElementById("fourmenusubmenu4").style.display = "none";
+                document.getElementById("fourmenusubmenu5").style.display = "none";
+                document.getElementById("fourmenusubmenu6").style.display = "none";
+                document.getElementById("fivemenusubmenu1").style.display = "none";
+                document.getElementById("fivemenusubmenu3").style.display = "none";
+                document.getElementById("fivemenusubmenu4").style.display = "none";
+                document.getElementById("fivemenusubmenu5").style.display = "none";
+                document.getElementById("fivemenusubmenu2").style.display = "none";
+                document.getElementById("fivemenusubmenu6").style.display = "none";
+            }
+
+            if (document.getElementById("supplykit").style.display == "block") {
+                document.getElementById("homekit").style.display = "none";
+                document.getElementById("jewelrykit").style.display = "none";
+                document.getElementById("partykit").style.display = "none";
+                document.getElementById("wearkit").style.display = "none";
+            }
+
+        }
+
+        
+            
+            //   open second  submenu 1 & close other submenues 
+        
+        function menu2submenu1() {
+            if (document.getElementById("secondmenusubmenu1").style.display == "none") {
+                document.getElementById("secondmenusubmenu1").style.display = "block";
+                // close other sub menues
+
+            }
+            if (document.getElementById("secondmenusubmenu1").style.display == "block") {
+                document.getElementById("secondmenusubmenu2").style.display = "none";
+                document.getElementById("secondmenusubmenu3").style.display = "none";
+                document.getElementById("secondmenusubmenu4").style.display = "none";
+                document.getElementById("secondmenusubmenu5").style.display = "none";
+                document.getElementById("secondmenusubmenu6").style.display = "none";
+            }
+            //   open home  submenu 2 & close other submenues 
+        }
+        function menu2submenu2() {
+            if (document.getElementById("secondmenusubmenu2").style.display == "none") { document.getElementById("secondmenusubmenu2").style.display = "block"; }
+
+            if (document.getElementById("secondmenusubmenu2").style.display == "block") {
+                document.getElementById("secondmenusubmenu1").style.display = "none";
+                document.getElementById("secondmenusubmenu3").style.display = "none";
+                document.getElementById("secondmenusubmenu4").style.display = "none";
+                document.getElementById("secondmenusubmenu5").style.display = "none";
+                document.getElementById("secondmenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 3 & close other submenues 
+        function menu2submenu3() {
+            if (document.getElementById("secondmenusubmenu3").style.display == "none") { document.getElementById("secondmenusubmenu3").style.display = "block"; }
+
+            if (document.getElementById("secondmenusubmenu3").style.display == "block") {
+                document.getElementById("secondmenusubmenu1").style.display = "none";
+                document.getElementById("secondmenusubmenu2").style.display = "none";
+                document.getElementById("secondmenusubmenu4").style.display = "none";
+                document.getElementById("secondmenusubmenu5").style.display = "none";
+                document.getElementById("secondmenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 4 & close other submenues 
+        function menu2submenu4() {
+            if (document.getElementById("secondmenusubmenu4").style.display == "none") { document.getElementById("secondmenusubmenu4").style.display = "block"; }
+
+            if (document.getElementById("secondmenusubmenu4").style.display == "block") {
+                document.getElementById("secondmenusubmenu1").style.display = "none";
+                document.getElementById("secondmenusubmenu3").style.display = "none";
+                document.getElementById("secondmenusubmenu2").style.display = "none";
+                document.getElementById("secondmenusubmenu5").style.display = "none";
+                document.getElementById("secondmenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 5 & close other submenues 
+        function menu2submenu5() {
+            if (document.getElementById("secondmenusubmenu5").style.display == "none") { document.getElementById("secondmenusubmenu5").style.display = "block"; }
+
+            if (document.getElementById("secondmenusubmenu5").style.display == "block") {
+                document.getElementById("secondmenusubmenu1").style.display = "none";
+                document.getElementById("secondmenusubmenu3").style.display = "none";
+                document.getElementById("secondmenusubmenu4").style.display = "none";
+                document.getElementById("secondmenusubmenu2").style.display = "none";
+                document.getElementById("secondmenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 6 & close other submenues 
+        function menu2submenu6() {
+            if (document.getElementById("secondmenusubmenu6").style.display == "none") { document.getElementById("secondmenusubmenu6").style.display = "block"; }
+
+            if (document.getElementById("secondmenusubmenu6").style.display == "block") {
+                document.getElementById("secondmenusubmenu1").style.display = "none";
+                document.getElementById("secondmenusubmenu3").style.display = "none";
+                document.getElementById("secondmenusubmenu4").style.display = "none";
+                document.getElementById("secondmenusubmenu5").style.display = "none";
+                document.getElementById("secondmenusubmenu2").style.display = "none";
+            }
+        }
+
+        //////////////////////     third menu script   /////////////////////
+        
+
+        // open third menu  and close other menues
+        function menu3open() {
+            if (document.getElementById("jewelrykit").style.display == "none") { 
+                document.getElementById("jewelrykit").style.display = "block";
+                document.getElementById("firstmenusubmenu1").style.display = "none";
+                document.getElementById("firstmenusubmenu2").style.display = "none";
+                document.getElementById("firstmenusubmenu3").style.display = "none";
+                document.getElementById("firstmenusubmenu4").style.display = "none";
+                document.getElementById("firstmenusubmenu5").style.display = "none";
+                document.getElementById("firstmenusubmenu6").style.display = "none";
+                document.getElementById("secondmenusubmenu1").style.display = "none";
+                document.getElementById("secondmenusubmenu2").style.display = "none";
+                document.getElementById("secondmenusubmenu3").style.display = "none";
+                document.getElementById("secondmenusubmenu4").style.display = "none";
+                document.getElementById("secondmenusubmenu5").style.display = "none";
+                document.getElementById("secondmenusubmenu6").style.display = "none";
+                document.getElementById("fourmenusubmenu1").style.display = "none";
+                document.getElementById("fourmenusubmenu2").style.display = "none";
+                document.getElementById("fourmenusubmenu3").style.display = "none";
+                document.getElementById("fourmenusubmenu4").style.display = "none";
+                document.getElementById("fourmenusubmenu5").style.display = "none";
+                document.getElementById("fourmenusubmenu6").style.display = "none";
+                document.getElementById("fivemenusubmenu1").style.display = "none";
+                document.getElementById("fivemenusubmenu3").style.display = "none";
+                document.getElementById("fivemenusubmenu4").style.display = "none";
+                document.getElementById("fivemenusubmenu5").style.display = "none";
+                document.getElementById("fivemenusubmenu2").style.display = "none";
+                document.getElementById("fivemenusubmenu6").style.display = "none";
+            }
+                
+            
+
+            if (document.getElementById("jewelrykit").style.display == "block") {
+                document.getElementById("homekit").style.display = "none";
+                document.getElementById("supplykit").style.display = "none";
+                document.getElementById("partykit").style.display = "none";
+                document.getElementById("wearkit").style.display = "none";
+            }
+
+        }
+
+        
+            
+            //   openthird  submenu 1 & close other submenues 
+        
+        function menu3submenu1() {
+            if (document.getElementById("thirdmenusubmenu1").style.display == "none") {
+                document.getElementById("thirdmenusubmenu1").style.display = "block";
+                // close other sub menues
+
+            }
+            if (document.getElementById("thirdmenusubmenu1").style.display == "block") {
+                document.getElementById("thirdmenusubmenu2").style.display = "none";
+                document.getElementById("thirdmenusubmenu3").style.display = "none";
+                document.getElementById("thirdmenusubmenu4").style.display = "none";
+                document.getElementById("thirdmenusubmenu5").style.display = "none";
+                document.getElementById("thirdmenusubmenu6").style.display = "none";
+            }
+            //   open home  submenu 2 & close other submenues 
+        }
+        function menu3submenu2() {
+            if (document.getElementById("thirdmenusubmenu2").style.display == "none") { document.getElementById("thirdmenusubmenu2").style.display = "block"; }
+
+            if (document.getElementById("thirdmenusubmenu2").style.display == "block") {
+                document.getElementById("thirdmenusubmenu1").style.display = "none";
+                document.getElementById("thirdmenusubmenu3").style.display = "none";
+                document.getElementById("thirdmenusubmenu4").style.display = "none";
+                document.getElementById("thirdmenusubmenu5").style.display = "none";
+                document.getElementById("thirdmenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 3 & close other submenues 
+        function menu3submenu3() {
+            if (document.getElementById("thirdmenusubmenu3").style.display == "none") { document.getElementById("thirdmenusubmenu3").style.display = "block"; }
+
+            if (document.getElementById("thirdmenusubmenu3").style.display == "block") {
+                document.getElementById("thirdmenusubmenu1").style.display = "none";
+                document.getElementById("thirdmenusubmenu2").style.display = "none";
+                document.getElementById("thirdmenusubmenu4").style.display = "none";
+                document.getElementById("thirdmenusubmenu5").style.display = "none";
+                document.getElementById("thirdmenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 4 & close other submenues 
+        function menu3submenu4() {
+            if (document.getElementById("thirdmenusubmenu4").style.display == "none") { document.getElementById("thirdmenusubmenu4").style.display = "block"; }
+
+            if (document.getElementById("thirdmenusubmenu4").style.display == "block") {
+                document.getElementById("thirdmenusubmenu1").style.display = "none";
+                document.getElementById("thirdmenusubmenu3").style.display = "none";
+                document.getElementById("thirdmenusubmenu2").style.display = "none";
+                document.getElementById("thirdmenusubmenu5").style.display = "none";
+                document.getElementById("thirdmenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 5 & close other submenues 
+        function menu3submenu5() {
+            if (document.getElementById("thirdmenusubmenu5").style.display == "none") { document.getElementById("thirdmenusubmenu5").style.display = "block"; }
+
+            if (document.getElementById("thirdmenusubmenu5").style.display == "block") {
+                document.getElementById("thirdmenusubmenu1").style.display = "none";
+                document.getElementById("thirdmenusubmenu3").style.display = "none";
+                document.getElementById("thirdmenusubmenu4").style.display = "none";
+                document.getElementById("thirdmenusubmenu2").style.display = "none";
+                document.getElementById("thirdmenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 6 & close other submenues 
+        function menu3submenu6() {
+            if (document.getElementById("thirdmenusubmenu6").style.display == "none") { document.getElementById("thirdmenusubmenu6").style.display = "block"; }
+
+            if (document.getElementById("thirdmenusubmenu6").style.display == "block") {
+                document.getElementById("thirdmenusubmenu1").style.display = "none";
+                document.getElementById("thirdmenusubmenu3").style.display = "none";
+                document.getElementById("thirdmenusubmenu4").style.display = "none";
+                document.getElementById("thirdmenusubmenu5").style.display = "none";
+                document.getElementById("thirdmenusubmenu2").style.display = "none";
+            }
+        }
+         /////////////////////four menu script/////////////////////////////////
+          // open four menu  and close other menues
+        function menu4open() {
+            if (document.getElementById("partykit").style.display == "none") { 
+                document.getElementById("partykit").style.display = "block";
+                document.getElementById("firstmenusubmenu1").style.display = "none";
+                document.getElementById("firstmenusubmenu2").style.display = "none";
+                document.getElementById("firstmenusubmenu3").style.display = "none";
+                document.getElementById("firstmenusubmenu4").style.display = "none";
+                document.getElementById("firstmenusubmenu5").style.display = "none";
+                document.getElementById("firstmenusubmenu6").style.display = "none";
+                document.getElementById("secondmenusubmenu1").style.display = "none";
+                document.getElementById("secondmenusubmenu2").style.display = "none";
+                document.getElementById("secondmenusubmenu3").style.display = "none";
+                document.getElementById("secondmenusubmenu4").style.display = "none";
+                document.getElementById("secondmenusubmenu5").style.display = "none";
+                document.getElementById("secondmenusubmenu6").style.display = "none";
+                document.getElementById("thirdmenusubmenu1").style.display = "none";
+                document.getElementById("thirdmenusubmenu3").style.display = "none";
+                document.getElementById("thirdmenusubmenu4").style.display = "none";
+                document.getElementById("thirdmenusubmenu5").style.display = "none";
+                document.getElementById("thirdmenusubmenu2").style.display = "none";
+                document.getElementById("thirdmenusubmenu6").style.display = "none";
+                document.getElementById("fivemenusubmenu1").style.display = "none";
+                document.getElementById("fivemenusubmenu3").style.display = "none";
+                document.getElementById("fivemenusubmenu4").style.display = "none";
+                document.getElementById("fivemenusubmenu5").style.display = "none";
+                document.getElementById("fivemenusubmenu2").style.display = "none";
+                document.getElementById("fivemenusubmenu6").style.display = "none";
+            }
+
+            if (document.getElementById("partykit").style.display == "block") {
+                document.getElementById("homekit").style.display = "none";
+                document.getElementById("supplykit").style.display = "none";
+                document.getElementById("jewelrykit").style.display = "none";
+                document.getElementById("wearkit").style.display = "none";
+            }
+
+        }
+
+        
+            
+            //   open four  submenu 1 & close other submenues 
+        
+        function menu4submenu1() {
+            if (document.getElementById("fourmenusubmenu1").style.display == "none") {
+                document.getElementById("fourmenusubmenu1").style.display = "block";
+                // close other sub menues
+
+            }
+            if (document.getElementById("fourmenusubmenu1").style.display == "block") {
+                document.getElementById("fourmenusubmenu2").style.display = "none";
+                document.getElementById("fourmenusubmenu3").style.display = "none";
+                document.getElementById("fourmenusubmenu4").style.display = "none";
+                document.getElementById("fourmenusubmenu5").style.display = "none";
+                document.getElementById("fourmenusubmenu6").style.display = "none";
+            }
+            //   open home  submenu 2 & close other submenues 
+        }
+        function menu4submenu2() {
+            if (document.getElementById("fourmenusubmenu2").style.display == "none") { document.getElementById("fourmenusubmenu2").style.display = "block"; }
+
+            if (document.getElementById("fourmenusubmenu2").style.display == "block") {
+                document.getElementById("fourmenusubmenu1").style.display = "none";
+                document.getElementById("fourmenusubmenu3").style.display = "none";
+                document.getElementById("fourmenusubmenu4").style.display = "none";
+                document.getElementById("fourmenusubmenu5").style.display = "none";
+                document.getElementById("fourmenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 3 & close other submenues 
+        function menu4submenu3() {
+            if (document.getElementById("fourmenusubmenu3").style.display == "none") { document.getElementById("fourmenusubmenu3").style.display = "block"; }
+
+            if (document.getElementById("fourmenusubmenu3").style.display == "block") {
+                document.getElementById("fourmenusubmenu1").style.display = "none";
+                document.getElementById("fourmenusubmenu2").style.display = "none";
+                document.getElementById("fourmenusubmenu4").style.display = "none";
+                document.getElementById("fourmenusubmenu5").style.display = "none";
+                document.getElementById("fourmenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 4 & close other submenues 
+        function menu4submenu4() {
+            if (document.getElementById("fourmenusubmenu4").style.display == "none") { document.getElementById("fourmenusubmenu4").style.display = "block"; }
+
+            if (document.getElementById("fourmenusubmenu4").style.display == "block") {
+                document.getElementById("fourmenusubmenu1").style.display = "none";
+                document.getElementById("fourmenusubmenu3").style.display = "none";
+                document.getElementById("fourmenusubmenu2").style.display = "none";
+                document.getElementById("fourmenusubmenu5").style.display = "none";
+                document.getElementById("fourmenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 5 & close other submenues 
+        function menu4submenu5() {
+            if (document.getElementById("fourmenusubmenu5").style.display == "none") { document.getElementById("fourmenusubmenu5").style.display = "block"; }
+
+            if (document.getElementById("fourmenusubmenu5").style.display == "block") {
+                document.getElementById("fourmenusubmenu1").style.display = "none";
+                document.getElementById("fourmenusubmenu3").style.display = "none";
+                document.getElementById("fourmenusubmenu4").style.display = "none";
+                document.getElementById("fourmenusubmenu2").style.display = "none";
+                document.getElementById("fourmenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 6 & close other submenues 
+        function menu4submenu6() {
+            if (document.getElementById("fourmenusubmenu6").style.display == "none") { document.getElementById("fourmenusubmenu6").style.display = "block"; }
+
+            if (document.getElementById("fourmenusubmenu6").style.display == "block") {
+                document.getElementById("fourmenusubmenu1").style.display = "none";
+                document.getElementById("fourmenusubmenu3").style.display = "none";
+                document.getElementById("fourmenusubmenu4").style.display = "none";
+                document.getElementById("fourmenusubmenu5").style.display = "none";
+                document.getElementById("fourmenusubmenu2").style.display = "none";
+            }
+        }
+ /////////////////////five menu script/////////////////////////////////
+          // open five menu  and close other menues
+          function menu5open() {
+            if (document.getElementById("wearkit").style.display == "none") { 
+                document.getElementById("wearkit").style.display = "block";
+                document.getElementById("firstmenusubmenu1").style.display = "none";
+                document.getElementById("firstmenusubmenu2").style.display = "none";
+                document.getElementById("firstmenusubmenu3").style.display = "none";
+                document.getElementById("firstmenusubmenu4").style.display = "none";
+                document.getElementById("firstmenusubmenu5").style.display = "none";
+                document.getElementById("firstmenusubmenu6").style.display = "none";
+                document.getElementById("secondmenusubmenu1").style.display = "none";
+                document.getElementById("secondmenusubmenu2").style.display = "none";
+                document.getElementById("secondmenusubmenu3").style.display = "none";
+                document.getElementById("secondmenusubmenu4").style.display = "none";
+                document.getElementById("secondmenusubmenu5").style.display = "none";
+                document.getElementById("secondmenusubmenu6").style.display = "none";
+                document.getElementById("thirdmenusubmenu1").style.display = "none";
+                document.getElementById("thirdmenusubmenu3").style.display = "none";
+                document.getElementById("thirdmenusubmenu4").style.display = "none";
+                document.getElementById("thirdmenusubmenu5").style.display = "none";
+                document.getElementById("thirdmenusubmenu2").style.display = "none";
+                document.getElementById("thirdmenusubmenu6").style.display = "none";
+                document.getElementById("fourmenusubmenu1").style.display = "none";
+                document.getElementById("fourmenusubmenu3").style.display = "none";
+                document.getElementById("fourmenusubmenu4").style.display = "none";
+                document.getElementById("fourmenusubmenu5").style.display = "none";
+                document.getElementById("fourmenusubmenu2").style.display = "none";
+                document.getElementById("fourmenusubmenu6").style.display = "none";
+            }
+
+            if (document.getElementById("wearkit").style.display == "block") {
+                document.getElementById("homekit").style.display = "none";
+                document.getElementById("supplykit").style.display = "none";
+                document.getElementById("jewelrykit").style.display = "none";
+                document.getElementById("partykit").style.display = "none";
+            }
+
+        }
+        
+        5
+            //   open five  submenu 1 & close other submenues 
+        
+        function menu5submenu1() {
+            if (document.getElementById("fivemenusubmenu1").style.display == "none") {
+                document.getElementById("fivemenusubmenu1").style.display = "block";
+                // close other sub menues
+
+            }
+            if (document.getElementById("fivemenusubmenu1").style.display == "block") {
+                document.getElementById("fivemenusubmenu2").style.display = "none";
+                document.getElementById("fivemenusubmenu3").style.display = "none";
+                document.getElementById("fivemenusubmenu4").style.display = "none";
+                document.getElementById("fivemenusubmenu5").style.display = "none";
+                document.getElementById("fivemenusubmenu6").style.display = "none";
+            }
+            //   open home  submenu 2 & close other submenues 
+        }
+        function menu5submenu2() {
+            if (document.getElementById("fivemenusubmenu2").style.display == "none") { document.getElementById("fivemenusubmenu2").style.display = "block"; }
+
+            if (document.getElementById("fivemenusubmenu2").style.display == "block") {
+                document.getElementById("fivemenusubmenu1").style.display = "none";
+                document.getElementById("fivemenusubmenu3").style.display = "none";
+                document.getElementById("fivemenusubmenu4").style.display = "none";
+                document.getElementById("fivemenusubmenu5").style.display = "none";
+                document.getElementById("fivemenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 3 & close other submenues 
+        function menu5submenu3() {
+            if (document.getElementById("fivemenusubmenu3").style.display == "none") { document.getElementById("fivemenusubmenu3").style.display = "block"; }
+
+            if (document.getElementById("fivemenusubmenu3").style.display == "block") {
+                document.getElementById("fivemenusubmenu1").style.display = "none";
+                document.getElementById("fivemenusubmenu2").style.display = "none";
+                document.getElementById("fivemenusubmenu4").style.display = "none";
+                document.getElementById("fivemenusubmenu5").style.display = "none";
+                document.getElementById("fivemenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 4 & close other submenues 
+        function menu5submenu4() {
+            if (document.getElementById("fivemenusubmenu4").style.display == "none") { document.getElementById("fivemenusubmenu4").style.display = "block"; }
+
+            if (document.getElementById("fivemenusubmenu4").style.display == "block") {
+                document.getElementById("fivemenusubmenu1").style.display = "none";
+                document.getElementById("fivemenusubmenu3").style.display = "none";
+                document.getElementById("fivemenusubmenu2").style.display = "none";
+                document.getElementById("fivemenusubmenu5").style.display = "none";
+                document.getElementById("fivemenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 5 & close other submenues 
+        function menu5submenu5() {
+            if (document.getElementById("fivemenusubmenu5").style.display == "none") { document.getElementById("fivemenusubmenu5").style.display = "block"; }
+
+            if (document.getElementById("fivemenusubmenu5").style.display == "block") {
+                document.getElementById("fivemenusubmenu1").style.display = "none";
+                document.getElementById("fivemenusubmenu3").style.display = "none";
+                document.getElementById("fivemenusubmenu4").style.display = "none";
+                document.getElementById("fivemenusubmenu2").style.display = "none";
+                document.getElementById("fivemenusubmenu6").style.display = "none";
+            }
+        }
+        //   open home  submenu 6 & close other submenues 
+        function menu5submenu6() {
+            if (document.getElementById("fivemenusubmenu6").style.display == "none") { document.getElementById("fivemenusubmenu6").style.display = "block"; }
+
+            if (document.getElementById("fivemenusubmenu6").style.display == "block") {
+                document.getElementById("fivemenusubmenu1").style.display = "none";
+                document.getElementById("fivemenusubmenu3").style.display = "none";
+                document.getElementById("fivemenusubmenu4").style.display = "none";
+                document.getElementById("fivemenusubmenu5").style.display = "none";
+                document.getElementById("fivemenusubmenu2").style.display = "none";
+            }
+        }
+    </script>
+    </header>
+</html>
